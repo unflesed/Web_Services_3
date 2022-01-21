@@ -5,18 +5,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@XmlRootElement(name = "CATALOG")
-public class Catalog {
+@XmlRootElement(name = "Gems")
+public class Gems {
 
-    @XmlElement(name = "CD")
-    private List<CD> cds = new ArrayList<>();
+    @XmlElement(name = "Gem")
+    private List<Gem> gems = new ArrayList<>();
 
-    public void add(CD cd) {
-        cds.add(cd);
+    public void add(Gem gem) {
+        gems.add(gem);
     }
 
     @Override
     public String toString() {
-        return Arrays.deepToString(cds.toArray());
+        return Arrays.deepToString(gems.toArray());
     }
 }
